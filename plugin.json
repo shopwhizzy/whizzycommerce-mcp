@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "whizzycommerce",
+  "version": "1.0.0",
+  "description": "Run a WhizzyCommerce shop from chat: orders, prices, sales, catalogue, translations and design. Reads are direct; every change is a preview the merchant confirms in the WhizzyCommerce dashboard.",
+  "author": {
+    "name": "WhizzyCommerce",
+    "url": "https://whizzycommerce.com"
+  },
+  "homepage": "https://whizzycommerce.com/developers/claude",
+  "repository": "https://github.com/shopwhizzy/whizzycommerce-mcp",
+  "license": "MIT",
+  "keywords": ["ecommerce", "shop", "orders", "products", "store"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "WhizzyCommerce",
+        "shortDescription": "Run your online shop",
+        "longDescription": "Connect your WhizzyCommerce shop and run it in plain language.\n\nAsk which paid orders have not gone out, mark an order sent with its tracking number, draft a reply to a customer, raise prices across a collection, set up a discount code, write product descriptions, translate the shop, improve search titles, compare this month's sales with last month's, or edit the theme.\n\nReads are direct. Anything that would change the shop comes back as a preview of every row before and after, with a confirmation link: only the merchant, signed in to the WhizzyCommerce dashboard, can apply it. Theme edits are drafts until the merchant publishes them. Every change is recorded in the shop's change log with who proposed and who confirmed it, and most can be undone from there.\n\nWhen you connect, you sign in to WhizzyCommerce, pick the shop and approve the connection. Out of the box a connection can only propose price changes and sales; the merchant widens that in the dashboard or picks a named role such as Analyst (reports only) or Shopkeeper (orders, catalogue, reports). No role includes refunds.",
+        "developerName": "WhizzyCommerce",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://whizzycommerce.com",
+        "supportURL": "https://app.whizzycommerce.com/support",
+        "privacyPolicyURL": "https://whizzycommerce.com/legal/privacy",
+        "termsOfServiceURL": "https://whizzycommerce.com/legal/terms",
+        "defaultPrompt": [
+          "Which paid orders haven't gone out yet?",
+          "Compare this month's sales with last month and tell me what changed",
+          "Write a better description for my best-selling product"
+        ],
+        "brandColor": "#9966FF",
+        "brandColorDark": "#9966FF",
+        "composerIcon": "./assets/logo.svg",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

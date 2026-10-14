@@ -2,9 +2,9 @@
 
 Run your online shop from Claude: orders, prices, sales, catalogue, translations and design, with nothing changing until you confirm.
 
-[WhizzyCommerce](https://whizzycommerce.com/?ref=mcpmarket) is an ecommerce platform that is free until you sell. Every shop has its own remote MCP server, so Claude (or any MCP client) can read the shop and propose changes in plain language.
+[WhizzyCommerce](https://whizzycommerce.com/?ref=mcpmarket) is an ecommerce platform that is free until you sell. Its remote MCP server lets Claude, ChatGPT or any MCP client read the shop and propose changes in plain language.
 
-This repository holds the documentation for the connector. The server is hosted by WhizzyCommerce; there is nothing to install or run.
+This repository holds the documentation for the connector and its plugin manifests for Claude and ChatGPT. The server is hosted by WhizzyCommerce; there is nothing to run.
 
 ## How it works
 
@@ -38,6 +38,19 @@ Custom connectors need a Claude plan that allows them; that plan pays for the th
 claude mcp add --transport http whizzy-merchant https://app.whizzycommerce.com/mcp
 claude
 /mcp     # whizzy-merchant, then Authenticate
+```
+
+### ChatGPT
+
+Settings, Apps, Advanced settings. Turn on Developer mode, then Create and paste the address.
+
+### As a plugin
+
+This repository is a plugin for both Claude Code and ChatGPT: `.claude-plugin/plugin.json` with `.mcp.json` for Claude, `plugin.json` with `mcp.json` for ChatGPT and Codex.
+
+```sh
+claude plugin marketplace add shopwhizzy/whizzycommerce-mcp
+claude plugin install whizzycommerce@whizzycommerce
 ```
 
 ### Other clients (`.mcp.json`)
