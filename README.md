@@ -11,8 +11,8 @@ This repository holds the documentation for the connector and its plugin manifes
 - **Reads are direct.** Orders, products, customers, sales, stock, settings.
 - **Writes are proposals.** A tool that would change the shop returns a preview of every row before and after, plus a confirmation link. Only the merchant, signed in to the WhizzyCommerce dashboard, can apply it.
 - **Every change leaves a receipt.** It lands in the shop's change log with who proposed it and who confirmed it, and most changes can be undone from there. An email that has been sent, or money that has left, cannot.
-- **Design edits are drafts.** Theme changes never touch the live shop until the merchant publishes them.
-- **Scoped access.** Out of the box a connection can only propose price changes and sales. The merchant widens that, or picks a named agent: Analyst (reports only), Shopkeeper (orders, catalogue, reports), Merchandiser (prices, catalogue, reports) or Front desk (customers, orders, reports). None of them includes refunds.
+- **Page layouts and themes are drafts.** Sections, pages and themes of your own wait in a draft until the merchant publishes them. Colours, fonts and the theme's settings apply to the live shop straight away, and each one is listed with an Undo.
+- **Scoped access.** Out of the box a connection may propose any change, each one still confirmed by the merchant. The merchant narrows that, or picks a named agent: Analyst (reports only), Shopkeeper (orders, catalogue, reports), Merchandiser (prices, catalogue, reports) or Front desk (customers, orders, reports). None of them includes refunds.
 
 ## Connect
 
@@ -80,8 +80,9 @@ claude plugin install whizzycommerce@whizzycommerce
 10. **Weekly brief.** "Every Monday at 8, send me a summary and anything that needs doing." A routine that emails you; suggested changes arrive as confirm links.
 11. **Catalogue imports.** Reads a supplier's CSV or XML file before importing, then sets up or runs the import.
 12. **Shop setup.** Delivery methods and areas, tax rates, currencies, policy pages, logo and name, and shopping feeds for Google Merchant Center and Meta.
-13. **Theme design.** "Make the header darker and add a banner for the autumn sale." Edits a draft you publish from Design.
-14. **Handing the shop to a helper.** A scoped agent such as Front desk or Merchandiser instead of full access.
+13. **Theme design.** "Make the header darker and add a banner for the autumn sale." Section and page changes are a draft you publish from Design; colours and fonts apply at once.
+14. **A theme of your own.** "Design me a theme from scratch: dark, editorial, big photography." Builds a theme kept in your account and seen by nobody else, tries it on your shop as a draft, and shows you screenshots. Publish it from Design, Themes, or download its files.
+15. **Handing the shop to a helper.** A scoped agent such as Front desk or Merchandiser instead of full access.
 
 ## What it can do
 
@@ -93,7 +94,7 @@ claude plugin install whizzycommerce@whizzycommerce
 - **Search and feeds:** search titles and descriptions, redirects, shopping feeds
 - **Settings:** delivery, collection points, tax, currencies, policies, plugins, reviews, opening or closing the shop
 - **Routines:** scheduled briefs and checks
-- **Design:** theme edits as drafts
+- **Design:** sections and pages on every page except checkout (cart, sign-in and plugin pages included) as drafts, colours, fonts and theme settings, and themes of your own built from scratch
 
 ## FAQ
 
