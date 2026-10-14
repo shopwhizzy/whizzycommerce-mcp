@@ -91,6 +91,7 @@ claude plugin install whizzycommerce@whizzycommerce
 - **Pricing:** bulk price changes, sales, discount codes, gift cards
 - **Customers:** look up, add, notes, email, sign-in links
 - **Languages:** shop languages, untranslated content, stored translations
+- **Menu:** the header menu, its order and dropdowns
 - **Search and feeds:** search titles and descriptions, redirects, shopping feeds
 - **Settings:** delivery, collection points, tax, currencies, policies, plugins, reviews, opening or closing the shop
 - **Routines:** scheduled briefs and checks
