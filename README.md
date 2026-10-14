@@ -81,7 +81,7 @@ claude plugin install whizzycommerce@whizzycommerce
 11. **Catalogue imports.** Reads a supplier's CSV or XML file before importing, then sets up or runs the import.
 12. **Shop setup.** Delivery methods and areas, tax rates, currencies, policy pages, logo and name, and shopping feeds for Google Merchant Center and Meta.
 13. **Theme design.** "Make the header darker and add a banner for the autumn sale." Section and page changes are a draft you publish from Design; colours and fonts apply at once.
-14. **A theme of your own.** "Design me a theme from scratch: dark, editorial, big photography." Builds a theme kept in your account and seen by nobody else, tries it on your shop as a draft, and shows you screenshots. Publish it from Design, Themes, or download its files.
+14. **A theme of your own.** "Design me a theme from scratch: dark, editorial, big photography." Builds a theme kept in your account and seen by nobody else, tries it on your shop as a draft, and shows you screenshots. Publish it from Design, Themes, or start another from a theme you already have.
 15. **Handing the shop to a helper.** A scoped agent such as Front desk or Merchandiser instead of full access.
 
 ## What it can do
