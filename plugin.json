@@ -10,16 +10,25 @@
   "homepage": "https://whizzycommerce.com/developers/claude",
   "repository": "https://github.com/shopwhizzy/whizzycommerce-mcp",
   "license": "MIT",
-  "keywords": ["ecommerce", "shop", "orders", "products", "store"],
+  "keywords": [
+    "ecommerce",
+    "shop",
+    "orders",
+    "products",
+    "store"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "WhizzyCommerce",
         "shortDescription": "Run your online shop",
-        "longDescription": "Connect your WhizzyCommerce shop and run it in plain language.\n\nAsk which paid orders have not gone out, mark an order sent with its tracking number, draft a reply to a customer, raise prices across a collection, set up a discount code, write product descriptions, translate the shop, improve search titles, compare this month's sales with last month's, or edit the theme.\n\nReads are direct. Anything that would change the shop comes back as a preview of every row before and after, with a confirmation link: only the merchant, signed in to the WhizzyCommerce dashboard, can apply it. Theme edits are drafts until the merchant publishes them. Every change is recorded in the shop's change log with who proposed and who confirmed it, and most can be undone from there.\n\nWhen you connect, you sign in to WhizzyCommerce, pick the shop and approve the connection. Out of the box a connection can only propose price changes and sales; the merchant widens that in the dashboard or picks a named role such as Analyst (reports only) or Shopkeeper (orders, catalogue, reports). No role includes refunds.",
+        "longDescription": "Connect your WhizzyCommerce shop and run it in plain language.\n\nAsk which paid orders have not gone out, mark an order sent with its tracking number, draft a reply to a customer, raise prices across a collection, set up a discount code, write product descriptions, translate the shop, improve search titles, compare this month's sales with last month's, or edit the theme.\n\nReads are direct. Anything that would change the shop comes back as a preview of every row before and after, with a confirmation link: only the merchant, signed in to the WhizzyCommerce dashboard, can apply it. Section and page changes are drafts until the merchant publishes them; colours and fonts apply at once, each with an Undo. It can also build a theme of the merchant's own from scratch, kept private to their account, and try it on the shop as a draft. Every change is recorded in the shop's change log with who proposed and who confirmed it, and most can be undone from there.\n\nWhen you connect, you sign in to WhizzyCommerce, pick the shop and approve the connection. Out of the box a connection may propose any change, each confirmed by the merchant; the merchant narrows that in the dashboard or picks a named role such as Analyst (reports only) or Shopkeeper (orders, catalogue, reports). No role includes refunds.",
         "developerName": "WhizzyCommerce",
         "category": "Productivity",
-        "capabilities": ["Read", "Write"],
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
         "websiteURL": "https://whizzycommerce.com",
         "supportURL": "https://app.whizzycommerce.com/support",
         "privacyPolicyURL": "https://whizzycommerce.com/legal/privacy",
