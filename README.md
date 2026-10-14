@@ -18,24 +18,24 @@ This repository holds the documentation for the connector. The server is hosted 
 
 | | |
 |---|---|
-| Endpoint | `https://app.whizzycommerce.com/mcp/<your-shop-id>` |
+| Endpoint | `https://app.whizzycommerce.com/mcp` |
 | Transport | Streamable HTTP |
-| Auth | OAuth (sign in to WhizzyCommerce and approve) |
+| Auth | OAuth 2.1 with PKCE and dynamic client registration |
 
-Copy your shop's exact address from the shop's **AI** screen in the WhizzyCommerce dashboard.
+One address for every shop: when you sign in, you pick the shop the connection is for. Each shop also has its own address, `https://app.whizzycommerce.com/mcp/<your-shop-id>`, on the shop's **AI** screen in the dashboard.
 
 ### claude.ai
 
 1. Settings, Connectors, **Add custom connector**.
 2. Paste the address and name it `whizzy-merchant`.
-3. Sign in to WhizzyCommerce and allow the connection.
+3. Sign in to WhizzyCommerce, pick the shop and allow the connection.
 
 Custom connectors need a Claude plan that allows them; that plan pays for the thinking.
 
 ### Claude Code
 
 ```sh
-claude mcp add --transport http whizzy-merchant https://app.whizzycommerce.com/mcp/<your-shop-id>
+claude mcp add --transport http whizzy-merchant https://app.whizzycommerce.com/mcp
 claude
 /mcp     # whizzy-merchant, then Authenticate
 ```
@@ -47,7 +47,7 @@ claude
   "mcpServers": {
     "whizzy-merchant": {
       "type": "http",
-      "url": "https://app.whizzycommerce.com/mcp/<your-shop-id>"
+      "url": "https://app.whizzycommerce.com/mcp"
     }
   }
 }
