@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.whizzycommerce/whizzycommerce",
+  "title": "WhizzyCommerce",
+  "description": "Run your online shop from Claude: orders, prices, sales, catalogue and design, confirmed by you.",
+  "version": "1.0.0",
+  "websiteUrl": "https://whizzycommerce.com",
+  "repository": {
+    "url": "https://github.com/shopwhizzy/whizzycommerce-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.whizzycommerce.com/mcp"
+    }
+  ]
+}
