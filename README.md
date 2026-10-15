@@ -108,7 +108,8 @@ claude plugin install whizzycommerce@whizzycommerce
 ## Links
 
 - Website: https://whizzycommerce.com
-- Connecting Claude: https://whizzycommerce.com/developers/claude
+- Connect Claude or ChatGPT (setup, safety, FAQ): https://whizzycommerce.com/connect
+- Theme developers: https://whizzycommerce.com/developers/claude
 
 ## License
 
