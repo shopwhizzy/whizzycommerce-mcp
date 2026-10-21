@@ -69,7 +69,7 @@ claude plugin install whizzycommerce@whizzycommerce
 ## Use cases
 
 1. **Morning order check.** "Which paid orders haven't gone out yet?" lists paid orders not fully shipped, with number, date and total.
-2. **Shipping orders.** "Order 1042 went with CTT today, tracking RR123456789PT. Mark it sent." Previews the status change and the dispatch email with the tracking link.
+2. **Shipping orders.** "Order 1042 went with CTT today, tracking RR123456789PT. Mark it sent." Previews the status change and the dispatch email with the tracking link. With the Sendcloud or Speedy plugin installed, "Book order 1043 with Speedy" books the parcel in the merchant's own carrier account and returns the tracking number; the label prints from the order page.
 3. **Customer service replies.** "Ana is asking where order 1038 is. Check it and write her a short reply." Looks up the order and drafts the email for you to confirm.
 4. **Price changes.** "Raise every price in the Autumn collection by 5%." One preview with every variant, old and new price. By collection, tag, vendor or list, up to 2,000 variants at a time.
 5. **Sales and discount codes.** "Make AUTUMN10: 10% off orders over 40 euros, once per customer, until the end of November."
@@ -78,16 +78,16 @@ claude plugin install whizzycommerce@whizzycommerce
 8. **Search titles and descriptions.** "Give the ten best sellers better search titles and descriptions."
 9. **Sales review.** "October felt slow. Compare it with September." Reads daily sales, best sellers, low stock and running promotions. It sees orders, not visitors.
 10. **Weekly brief.** "Every Monday at 8, send me a summary and anything that needs doing." A routine that emails you; suggested changes arrive as confirm links.
-11. **Catalogue imports.** Reads a supplier's CSV or XML file before importing, then sets up or runs the import.
-12. **Shop setup.** Delivery methods and areas, tax rates, currencies, policy pages, logo and name, and shopping feeds for Google Merchant Center and Meta.
+11. **Catalogue imports.** Reads a supplier's CSV or XML file before importing, then sets up or runs the import. Moving from Shopify: "Import my store at mystore.com" brings the products, variants, pictures and the collections each product is in.
+12. **Shop setup.** Delivery methods and areas, tax rates and whether shoppers see the included-tax line, currencies, policy pages, logo and name, and shopping feeds for Google Merchant Center and Meta.
 13. **Theme design.** "Make the header darker and add a banner for the autumn sale." Section and page changes are a draft you publish from Design; colours and fonts apply at once.
 14. **A theme of your own.** "Design me a theme from scratch: dark, editorial, big photography." Builds a theme kept in your account and seen by nobody else, tries it on your shop as a draft, and shows you screenshots. Publish it from Design, Themes, or start another from a theme you already have.
 15. **Handing the shop to a helper.** A scoped agent such as Front desk or Merchandiser instead of full access.
 
 ## What it can do
 
-- **Orders:** look up, notes, create, mark sent or delivered, correct tracking, email payment links
-- **Catalogue:** products, categories, pictures, publishing, CSV and XML imports
+- **Orders:** look up, notes, create, mark sent or delivered, correct tracking, book shipping labels (Sendcloud, Speedy), email payment links
+- **Catalogue:** products, categories, pictures, publishing, CSV and XML imports, import from a Shopify store
 - **Pricing:** bulk price changes, sales, discount codes, gift cards
 - **Customers:** look up, add, notes, email, sign-in links
 - **Languages:** shop languages, untranslated content, stored translations
