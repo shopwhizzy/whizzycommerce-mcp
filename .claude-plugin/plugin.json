@@ -1,6 +1,7 @@
 {
   "name": "whizzycommerce",
-  "version": "1.0.1",
+  "displayName": "WhizzyCommerce",
+  "version": "1.0.2",
   "description": "Run a WhizzyCommerce shop from Claude: orders, prices, sales, catalogue, translations and design, with nothing changing until the merchant confirms.",
   "author": { "name": "WhizzyCommerce", "url": "https://whizzycommerce.com" },
   "homepage": "https://whizzycommerce.com/connect",
