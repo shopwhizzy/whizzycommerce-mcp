@@ -3,7 +3,7 @@
   "name": "com.whizzycommerce/whizzycommerce",
   "title": "WhizzyCommerce",
   "description": "Run your online shop from Claude: orders, prices, sales, catalogue and design, confirmed by you.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "websiteUrl": "https://whizzycommerce.com",
   "repository": {
     "url": "https://github.com/shopwhizzy/whizzycommerce-mcp",
