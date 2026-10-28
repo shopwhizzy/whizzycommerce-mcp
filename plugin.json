@@ -55,7 +55,7 @@
               "description": "List the shop's products",
               "prompt": "List the products in my shop with their price and stock.",
               "tools_triggered": "list_products",
-              "expected_behavior": "Returns the shop's products (Review Goods has six, such as Linen Apron and Olive Wood Board) with price, status and quantity in stock. Nothing is changed."
+              "expected_behavior": "Returns the shop's six products (such as Linen Apron and Olive Wood Board) with id, price, status, total stock and each variant's SKU, price and stock. Nothing is changed."
             },
             {
               "description": "Sales report for a period",
@@ -72,7 +72,7 @@
             {
               "description": "Propose a price change",
               "prompt": "Raise the price of the Linen Apron by 10%.",
-              "tools_triggered": "list_products, products_edit",
+              "tools_triggered": "list_products, products_bulk_price_edit",
               "expected_behavior": "Looks up the Linen Apron, then proposes the new price. The tool returns a preview of the change (old and new price) and a confirmation link; the price does not change until the merchant opens the link while signed in to the WhizzyCommerce dashboard and confirms. The assistant says plainly that nothing has changed yet."
             },
             {
