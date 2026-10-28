@@ -97,7 +97,8 @@
             }
           ]
         },
-        "commerce": false
+        "commerce": false,
+        "demo_recording_url": "https://youtu.be/nekUc_BwCr8"
       },
       "publication": {
         "release_notes": "Version 1.0.2: listing assets in the current brand and screenshots."
