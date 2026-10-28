@@ -47,6 +47,60 @@
           "./assets/screenshot-2-ai.png",
           "./assets/screenshot-3-editor.png"
         ]
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "List the shop's products",
+              "prompt": "List the products in my shop with their price and stock.",
+              "tools_triggered": "list_products",
+              "expected_behavior": "Returns the shop's products (Review Goods has six, such as Linen Apron and Olive Wood Board) with price, status and quantity in stock. Nothing is changed."
+            },
+            {
+              "description": "Sales report for a period",
+              "prompt": "How did my shop sell this month compared with last month?",
+              "tools_triggered": "sales_report",
+              "expected_behavior": "Returns revenue, order count and average order value for both periods and describes the difference. The review shop is a demo with no real orders, so the figures are zero and the answer says so. Nothing is changed."
+            },
+            {
+              "description": "Find products that are running low",
+              "prompt": "Which products are running low on stock?",
+              "tools_triggered": "inventory_low",
+              "expected_behavior": "Lists products at or under the shop's low-stock threshold with their current quantity, or says none are low. Nothing is changed."
+            },
+            {
+              "description": "Propose a price change",
+              "prompt": "Raise the price of the Linen Apron by 10%.",
+              "tools_triggered": "list_products, products_edit",
+              "expected_behavior": "Looks up the Linen Apron, then proposes the new price. The tool returns a preview of the change (old and new price) and a confirmation link; the price does not change until the merchant opens the link while signed in to the WhizzyCommerce dashboard and confirms. The assistant says plainly that nothing has changed yet."
+            },
+            {
+              "description": "Propose a discount code",
+              "prompt": "Create a discount code AUTUMN15 for 15% off everything, valid until the end of November.",
+              "tools_triggered": "discounts_coupon",
+              "expected_behavior": "Returns a preview of the coupon (code, 15% off, end date) and a confirmation link. The code exists only after the merchant confirms it in the dashboard. Calling changes_status with the returned change_id reports pending, then confirmed after confirmation."
+            }
+          ],
+          "negative": [
+            {
+              "description": "General knowledge question unrelated to the shop",
+              "prompt": "What is the capital of Australia?"
+            },
+            {
+              "description": "Creative writing with no shop data",
+              "prompt": "Write a short poem about autumn leaves."
+            },
+            {
+              "description": "Question about another platform",
+              "prompt": "How do I change the theme of my Shopify store?"
+            }
+          ]
+        },
+        "commerce": false
+      },
+      "publication": {
+        "release_notes": "Version 1.0.2: listing assets in the current brand and screenshots."
       }
     }
   }
